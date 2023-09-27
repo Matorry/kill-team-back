@@ -1,0 +1,91 @@
+{
+  "info": {
+    "_postman_id": "d5072297-3207-476a-8e24-c698ad2c1bbf",
+    "name": "Users",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28955438"
+  },
+  "item": [
+    {
+      "name": "http://localhost:4300/users/register",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"userName\": \"Matorry\",\r\n    \"password\": \"12345\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4300/users/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4300",
+          "path": ["users", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:4300/users/register",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"userName\": \"Matorry\",\r\n  \"password\": \"12345\",\r\n  \"firstName\": \"Rodrigo\",\r\n  \"lastName\": \"Martin\",\r\n  \"comands\": [],\r\n  \"email\": \"bla@blabla.com\",\r\n  \"age\": \"34\",\r\n  \"gender\": \"male\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4300/users/register",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4300",
+          "path": ["users", "register"]
+        },
+        "description": "User register"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:4300/users/65003f80c0b2f992e4d61895",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4300/users/65003f80c0b2f992e4d61895",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4300",
+          "path": ["users", "65003f80c0b2f992e4d61895"]
+        },
+        "description": "Get by Id"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:4300/users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4300/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4300",
+          "path": ["users"]
+        },
+        "description": "Get all"
+      },
+      "response": []
+    }
+  ]
+}
